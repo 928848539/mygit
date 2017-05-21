@@ -8,17 +8,27 @@
      
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<script>
+function okUser(id){
+	var s=document.getElementById("userName").name;
+
+	window.self.location ="gerenxinxi.jsp?name="+s; 
+
+ 
+}
+</script>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>主页</title>
+
 </head>
 <body background=1.jpg
 style="background-size:100% 100%;
 background-repeat:no-repeat;
 background-attachment:fixed">
-<form action="gerenxinxi.jsp"method="get">
-<input type="submit"value="个人信息"></input> <br>
-</form>
+
+<input type="button"value="个人信息"id="btndel" onclick="okUser()"></input> <br>
+
 <form action="haoyou.jsp"method="get">
 <input type="submit"value="好友信息"></input> <br>
 </form>
@@ -56,7 +66,7 @@ try {
 } catch(Exception e) {
     e.printStackTrace();     
 }     
-%>
+%>	登录帐号：<input type="text" id="userName" name=<%=s%>><br>
 	<div>用户：<%=s%><button type="button" id="btndel" onclick="location.href='write.jsp?name=<%=s%> '">写文章</button></div>
 	<div>文章</div>
 	<ul><%

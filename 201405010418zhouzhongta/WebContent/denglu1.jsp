@@ -17,6 +17,7 @@ String name = null;
 String Password = null;  
 String s=request.getParameter("name");
 String s1=request.getParameter("password");
+System.out.print(s);
 String driver = "com.mysql.jdbc.Driver";    
 // URL指向要访问的数据库名scutcs  
 String url = "jdbc:mysql://127.0.0.1:3306/boke";  
