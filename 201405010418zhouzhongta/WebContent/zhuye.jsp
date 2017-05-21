@@ -12,7 +12,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>主页</title>
 </head>
-<body>
+<body background=1.jpg
+style="background-size:100% 100%;
+background-repeat:no-repeat;
+background-attachment:fixed">
+<form action="gerenxinxi.jsp"method="get">
+<input type="submit"value="个人信息"></input> <br>
+</form>
+<form action="haoyou.jsp"method="get">
+<input type="submit"value="好友信息"></input> <br>
+</form>
+<form action="wenzhang.jsp"method="get">
+<input type="submit"value="文章"></input> <br>
+</form>
+<form action="tupian.jsp"method="get">
+<input type="submit"value="图片"></input> <br>
+</form>
+
+
 <%
 String s=request.getParameter("name");
 String driver = "com.mysql.jdbc.Driver";  
@@ -64,6 +81,9 @@ try {
 		%>数据库导入失败<% 
 	} %>
 	</ul>
-	<div class="footer"><span class="gray">&copy;违法和不良信息举报928848539@qq.com  经营许可证：苏A2-20110026 苏ICP备11017770号 copyright© 2016-2017计算机工程学院周钟涛版权所有</span></div>
+<form action="denglu.jsp"method="get">
+<div align="right">
+<input type="submit"value="退出"></input> <br>
+</div>	
 </body>
 </html>

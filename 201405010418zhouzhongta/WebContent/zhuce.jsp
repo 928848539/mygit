@@ -29,7 +29,10 @@ else
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>注册</title>
 </head>
-<body>
+<body background=12.png
+style="background-size:100% 100%;
+background-repeat:no-repeat;
+background-attachment:fixed">
 <%
 
 %>
@@ -40,7 +43,7 @@ else
 	<button type="button" id="btndel" onclick="okUser()">确定</button>
 	<button type="button" id="btndel" onclick="location.href='denlu.jsp'">取消</button>
 	</div>
-	<div class="footer" style="position:relative;">违法和不良信息举报928848539@qq.com  经营许可证：苏A2-20110026 苏ICP备11017770号 copyright© 2016-2017计算机工程学院周钟涛版权所有</div>
+	<h5 style="position:absolute;bottom:0px;">违法和不良信息举报617586422@qq.com  经营许可证：苏A2-20110026 计算机144 </h5>
 </body>
 
 </html>

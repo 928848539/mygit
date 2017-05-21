@@ -16,8 +16,14 @@ function okUser1(id){
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>登录</title>
 </head>
-<body>
-
+<body background=13.jpg
+style="background-size:100% 100%;
+background-repeat:no-repeat;
+background-attachment:fixed">
+<img src="11.jpg"/><br> 
+<center>
+<h1>欢迎进入博客登录页面<h1>
+</center>
 	<h2>用户登录</h2>
  	登录帐号：<input type="text" id="userName" name="userName"><br>
    	登录密码：<input type="password" id="userPWD" name="userPWD"><br>
