@@ -16,12 +16,20 @@ function okUser(id){
 
  
 }
+function jmp(id)
+{
+	var s=document.getElementById("userName").name;
+	window.self.location ="haoyou.jsp?name="+s; 
+}
 </script>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>主页</title>
 
 </head>
+
+
+
 <body background=1.jpg
 style="background-size:100% 100%;
 background-repeat:no-repeat;
@@ -29,9 +37,8 @@ background-attachment:fixed">
 
 <input type="button"value="个人信息"id="btndel" onclick="okUser()"></input> <br>
 
-<form action="haoyou.jsp"method="get">
-<input type="submit"value="好友信息"></input> <br>
-</form>
+<input type="button"value="好友信息" id="btndeh" onclick="jmp()"></input> <br>
+
 <form action="wenzhang.jsp"method="get">
 <input type="submit"value="文章"></input> <br>
 </form>

@@ -20,6 +20,11 @@ function okUser(id){
 
  
 }
+function back()
+{
+	var s=document.getElementById("1").value;
+	window.self.location ="zhuye.jsp?name="+s;
+}
 </script>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -113,13 +118,10 @@ QQ；<input type="text"id="6"value=<%=qq %>><br>
 
 
 
-<form action="zhuye.jsp"method="get">
+
 <div align="right">
 
-
-
-
-<input type="submit"value="返回主页"></input> 
+<input type="button"value="返回主页" onclick="back()"></input> 
 </div>
 </body>
 </html>

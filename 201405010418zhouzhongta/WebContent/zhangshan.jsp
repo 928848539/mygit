@@ -10,12 +10,13 @@
 style="background-size:100% 100%;
 background-repeat:no-repeat;
 background-attachment:fixed">
+<a><%=request.getParameter("name")%></a><br>
 名字：张山<br>
 年纪：23<br>
 职业：学生<br>
 qq:123456<br>
 文章：<br>
-<a href="xiayu.jsp">下完这场雨</a><br>
+<a href="xiayu.jsp?name=<%=request.getParameter("name")%>">下完这场雨</a><br>
 <form action="haoyou.jsp"method="get">
 <div align="right">
 <input type="submit"value="返回"></input> 

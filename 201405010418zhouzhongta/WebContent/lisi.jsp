@@ -15,7 +15,7 @@ background-attachment:fixed">
 职业：老师<br>
 qq:2345342234<br>
 文章：<br>
-<a href="nanian.jsp">那年、那天、那时</a><br>
+<a href="nanian.jsp?name=<%=request.getParameter("name")%>">那年、那天、那时</a><br>
 <form action="haoyou.jsp"method="get">
 <div align="right">
 <input type="submit"value="返回"></input> 
