@@ -3,7 +3,14 @@
     <%@page import="java.sql.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<script>
 
+function back()
+{
+	var s=document.getElementById("1").value;
+	window.self.location ="zhuye.jsp?name="+s;
+}
+</script>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
@@ -23,6 +30,8 @@ style="background-size:100% 100%;
 background-repeat:no-repeat;
 background-attachment:fixed">
 <a id="name"><%=request.getParameter("name") %></a><br>
+<%String s=request.getParameter("name");%>
+<div>用户：<input id="1"  value=<%=s%>></div>
 烟雨中手执青伞 可是你<br>
 衣襟微湿 无助彷徨<br>
 如果可以 请别下完这场雨<br>
@@ -111,11 +120,8 @@ try {
 
 <textarea id="text" ></textarea>
 <input type="button"value="发表评论" id="btndeh" onclick="pinglun()"></input>
-<form action="zhangshan.jsp"method="get">
 <div align="right">
-<input type="submit"value="返回"></input> 
+<input type="button"value="返回主页" onclick="back()"></input> 
 </div>
-
-</form>
 </body>
 </html>
