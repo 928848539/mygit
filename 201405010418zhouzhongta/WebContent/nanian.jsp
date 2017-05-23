@@ -16,12 +16,21 @@ function pinglun(id)
 	window.self.location ="insert1.jsp?name="+name+"&text="+text;
 }
 
+function back()
+{
+	var s=document.getElementById("1").value;
+	window.self.location ="zhuye.jsp?name="+s;
+}
+
 </script>
 <body background=2.png
 style="background-size:100% 100%;
 background-repeat:no-repeat;
 background-attachment:fixed">
+<%String s=request.getParameter("name");%>
+<div>用户：<input id="1"  value=<%=s%>></div>
 <a id="name"><%=request.getParameter("name") %></a><br>
+
 那年，我们都不在年轻！<br>
 你说：“你害怕相亲”<br>
  
@@ -123,12 +132,9 @@ try {
 
 <textarea id="text" ></textarea>
 <input type="button"value="发表评论" id="btndeh" onclick="pinglun()"></input>
-<form action="lisi.jsp"method="get">
 <div align="right">
-<input type="submit"value="返回"></input> 
+<input type="button"value="返回主页" onclick="back()"></input> 
 </div>
-
-</form>
 
 </body>
 </html>
