@@ -17,6 +17,9 @@ function back()
 <body>
 <%String s=request.getParameter("name");%>
 <div>用户：<input id="1"  value=<%=s%>></div>
+<img src="3.jpg"/>
+<img src="4.jpg"/>
+<img src="5.jpg"/>
 <div align="right">
 <input type="button"value="返回主页" onclick="back()"></input> 
 </div>

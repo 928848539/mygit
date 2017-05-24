@@ -74,7 +74,7 @@ try {
 } catch(Exception e) {
     e.printStackTrace();     
 }     
-%>	登录帐号：<input type="text" id="userName" name=<%=s%>><br>
+%>	登录帐号：<input type="text" id="userName" name=<%=s%> value=<%=s%>><br>
 	<div>用户：<%=s%><button type="button" id="btndel" onclick="location.href='write.jsp?name=<%=s%> '">写文章</button></div>
 	<div>文章</div>
 	<ul><%
