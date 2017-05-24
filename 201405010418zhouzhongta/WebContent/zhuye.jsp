@@ -21,6 +21,11 @@ function jmp(id)
 	var s=document.getElementById("userName").name;
 	window.self.location ="haoyou.jsp?name="+s; 
 }
+function jmp1(id)
+{
+	var s=document.getElementById("userName").name;
+	window.self.location ="tupian.jsp?name="+s; 
+}
 </script>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -39,12 +44,8 @@ background-attachment:fixed">
 
 <input type="button"value="好友信息" id="btndeh" onclick="jmp()"></input> <br>
 
-<form action="wenzhang.jsp"method="get">
-<input type="submit"value="文章"></input> <br>
-</form>
-<form action="tupian.jsp"method="get">
-<input type="submit"value="图片"></input> <br>
-</form>
+<input type="button"value="图片" id="btndeh" onclick="jmp1()"></input> <br>
+
 
 
 <%
