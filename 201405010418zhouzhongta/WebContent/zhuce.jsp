@@ -40,8 +40,14 @@ background-attachment:fixed">
 	<div>密码:<input name="password1" type="password"id="password14"size="20"maxlength="20"></div>
 	<div>确认密码:<input name="password2" type="password"id="password25"size="20"maxlength="20"></div>
 	<div>
-	<button type="button" id="btndel" onclick="okUser()">确定</button>
-	<button type="button" id="btndel" onclick="location.href='denlu.jsp'">取消</button>
+	名字：<input type="label"id="1"  readonly="true"value=<%=s %> ><br>
+
+
+年纪：<input type="text"id="2"value=<%=age %> ><br>
+职业：<input type="text"id="3"value=<%=zhiye %>><br>
+家庭住址:<input type="text"id="4"value=<%=dizhi %>><br>
+联系电话；<input type="text"id="5"value=<%=dianhua %>><br>
+QQ；<input type="text"id="6"value=<%=qq %>><br>
 	</div>
 	<h5 style="position:absolute;bottom:0px;">违法和不良信息举报617586422@qq.com  经营许可证：苏A2-20110026 计算机144 </h5>
 </body>

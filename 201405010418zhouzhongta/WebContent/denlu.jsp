@@ -25,10 +25,15 @@ background-attachment:fixed">
 <h1>欢迎进入博客登录页面<h1>
 </center>
 	<h2>用户登录</h2>
- 	登录帐号：<input type="text" id="userName" name="userName"><br>
-   	登录密码：<input type="password" id="userPWD" name="userPWD"><br>
-  
-<button type="button" id="btndel" onclick="okUser()">确定</button>
+ 	style="background-size:100% 100%;
+background-repeat:no-repeat;
+background-attachment:fixed">
+<%String s=request.getParameter("name");%>
+<div>用户：<input id="1"  value=<%=s%>></div>
+<a href="zhangshan.jsp?name=<%=request.getParameter("name") %>">张山 </a><br>
+<a href="lisi.jsp?name=<%=request.getParameter("name")%>">李四 </a><br>
+<div align="right">
+<input type="button"value="返回主页" onclick="back()"></input> 
 <button type="button" id="btndel1" onclick="okUser1()">注册</button>
 </body>
 </html>
