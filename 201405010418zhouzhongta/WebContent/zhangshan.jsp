@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -22,11 +22,10 @@ background-attachment:fixed">
 <a><%=request.getParameter("name")%></a><br>
 <%String s=request.getParameter("name");%>
 <div>用户：<input id="1"  value=<%=s%>></div>
-名字：张山<br>
-年纪：23<br>
-职业：学生<br>
-qq:123456<br>
-文章：<br>
+<%String s=request.getParameter("name");%>
+<div>用户：<input id="1"  value=<%=s%>></div>
+<img src="3.jpg"/>
+<img src="4.jpg"/>
 <a href="xiayu.jsp?name=<%=request.getParameter("name")%>">下完这场雨</a><br>
 <div align="right">
 <input type="button"value="返回主页" onclick="back()"></input> 

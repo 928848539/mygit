@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page  import="java.sql.Connection" %>
 <%@ page  import="java.sql.DriverManager"%>
@@ -73,6 +73,9 @@ System.out.print(s);
 %>
 	<div>注册成功，点击确定返回主页</div>
 	<div><button type="button" id="btndel" onclick="location.href='zhuye.jsp?name=<%=s%> '">确定</button></div>
-	<div class="footer" style="position:relative;">违法和不良信息举报928848539@qq.com  经营许可证：苏A2-20110026 苏ICP备11017770号 copyright© 2016-2017计算机工程学院周钟涛版权所有</div>
+	<%String s=request.getParameter("name");%>
+<div>用户：<input id="1"  value=<%=s%>></div>
+<img src="3.jpg"/>
+<img src="4.jpg"/>
 </body>
 </html>

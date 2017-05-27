@@ -31,5 +31,19 @@ else
 </head>
 <body background=12.png
 style="background-size:100% 100%;
+background-repeat:no-repeat;
+background-attachment:fixed">
+<%
+
+%>
+	<div>用户名：<input name="username" type="text"id="username4"maxlength="20"></div>
+	<div>密码:<input name="password1" type="password"id="password14"size="20"maxlength="20"></div>
+	<div>确认密码:<input name="password2" type="password"id="password25"size="20"maxlength="20"></div>
+	<div>
+	<button type="button" id="btndel" onclick="okUser()">确定</button>
+	<button type="button" id="btndel" onclick="location.href='denlu.jsp'">取消</button>
+	</div>
+	<h5 style="position:absolute;bottom:0px;">违法和不良信息举报617586422@qq.com  经营许可证：苏A2-20110026 计算机144 </h5>
+</body>
 
 </html>
